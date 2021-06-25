@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello World
+          Hello World Jasper is Here
         </p>
         <a
           className="App-link"
@@ -23,3 +23,30 @@ function App() {
 }
 
 export default App;
+
+
+
+// {
+//   "name":"Task Tracker",
+//   "dockerFile":"Dockerfile",
+//   "appPort": "[3000]",
+//   "runArgs": ["-u", "node"],
+//   "settings": {
+//       "workbench.colorTheme":"Andromeda Italic",
+//       /*"terminal.integrated.profiles.linux": {
+//           "zsh (login)": {
+//               "path": "zsh",
+//               "args": ["-l"]
+//           }
+//       }*/
+//   },
+//   "postCreateCommand": "npm install",
+//   "extensions": [
+//   "eliverlara.andromeda",
+//   "ms-azuretools.vscode-docker",
+//   "dsznajder.es7-react-js-snippets",
+//   "oderwat.indent-rainbow",
+//   "esbenp.prettier-vscode"
+// ]
+
+// }
