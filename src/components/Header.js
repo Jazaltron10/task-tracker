@@ -1,7 +1,7 @@
 // This is used to be required but it no longer is
 // import React from 'react' 
 import PropTypes from 'prop-types'
-import Button from "./Button.jsx"
+import Button from "./Button"
 const Header = ({title}) => {
     const onClick = (e) =>{
             console.log("Click");
