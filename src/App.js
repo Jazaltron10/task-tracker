@@ -5,7 +5,7 @@ import Tasks from "./components/Tasks"
 const App = () =>{
       // state is immutable therefore its not something that you can directly change hence why we use the useState hook setTasks 
     // SO the way it works is that anytime you are making changes to the state you are basically recreating it and send it down.
-    const[tasasks, setTasks] = useState([  
+    const[tasks, setTasks] = useState([  
       {
           id:1,
           text:"Doctors Appointment",
@@ -26,10 +26,26 @@ const App = () =>{
       }
   ])  
   
+  // Delete Task 
+  const deleteTask = (id) => {
+    // console.log('delete', id);
+    setTasks(tasks.filter((task)=>task.id !== id))
+  }
+
+  // Toggle Reminder 
+  const toggleReminder = (id) =>{
+    // console.log(id);
+    setTasks(
+      tasks.map((task) => 
+        task.id === id ? {...task, reminder: !task.reminder } : task
+      )
+      )
+  }
   return (
     <div className="container">
       <Header />
-      <Tasks tasks={tasasks}/>
+      {tasks.length > 0 ? <Tasks tasks={tasks} 
+      onDelete = {deleteTask} onToggle={toggleReminder}/> : "No Tasks To Show "}
     </div>
   );
 }
