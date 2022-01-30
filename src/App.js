@@ -9,7 +9,7 @@ import About from "./components/About"
 const App = () =>{
     // state is immutable therefore its not something that you can directly change hence why we use the useState hook setTasks 
     // SO the way it works is that anytime you are making changes to the state you are basically recreating it and send it down.
-    // We use the hook use effect make something happen right when the page loads.
+    // We use the hook useEffect make something happen right when the page loads its similar to DOMContentLoaded.
     const[showAddTask, setShowAddTask] = useState(false)
     const[tasks, setTasks] = useState([])
 

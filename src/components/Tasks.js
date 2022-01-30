@@ -15,3 +15,4 @@ const Tasks = ({tasks, onDelete, onToggle}) => {
 }
 
 export default Tasks
+// npx json-server --watch Database/db.json --port 8000
