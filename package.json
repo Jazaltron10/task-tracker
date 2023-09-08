@@ -22,6 +22,15 @@
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 5000"
   },
+  "builds": [
+    {
+      "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog/dist",
+      "use": "@vercel/node",
+      "config": {
+        "command": "npm run build"
+      }
+    }
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
