@@ -81,6 +81,7 @@ const App = () =>{
       )
       )
   }
+  
   // To use the router we have to wrap everything in the return statement in the router tag.
   return (
     <Router>
